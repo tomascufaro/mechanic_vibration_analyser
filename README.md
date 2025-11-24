@@ -72,7 +72,13 @@ cd mechanic_vibration_analyser
 
 2. Install required dependencies:
 ```bash
-pip install smbus pandas matplotlib
+pip install pandas matplotlib
+
+# For I2C communication, install one of the following:
+# On Raspberry Pi/Debian/Ubuntu:
+sudo apt-get install python3-smbus
+# OR use smbus2 (cross-platform alternative):
+pip install smbus2
 ```
 
 3. Connect your MPU6050 sensor to the I2C pins on your device.
